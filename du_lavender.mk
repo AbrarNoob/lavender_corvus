@@ -29,10 +29,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit some common Corvus stuff.
+$(call inherit-product, vendor/du/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -43,7 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "google/coral/coral:11/RQ1A.201205.008/6943376:user/release-keys" 
 
 # Device identifier
-PRODUCT_NAME := revengeos_lavender
+PRODUCT_NAME := du_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
